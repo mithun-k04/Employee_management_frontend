@@ -19,7 +19,7 @@ export default function Addemployee() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:8000/api/employees/`, employee);
+      await axios.post(`http://localhost:8000/api/addemployee/`, employee);
       alert("Employee added successfully!");
     } catch (err) {
       console.error(err);
