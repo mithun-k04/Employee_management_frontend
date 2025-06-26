@@ -26,6 +26,10 @@ export default function Dashboard() {
          navigate('/editemployee/' + eid);
     }
 
+    const handleLeave=(eid)=>{
+         navigate('/leaverecord/' + eid);
+    }
+
     return (
         <>
             <h1>Dashboard</h1>
@@ -39,6 +43,7 @@ export default function Dashboard() {
                         <th>Designation</th>
                         <th>Join Date</th>
                         <th>Edit</th>
+                        <th>Leave Record</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,6 +55,7 @@ export default function Dashboard() {
                             <td>{emp.designation}</td>
                             <td>{emp.join_date}</td>
                             <td><button onClick={()=>handleClick(emp.id)}>Edit</button></td>
+                            <td><button onClick={()=>handleLeave(emp.id)}>Leave Record</button></td>
                         </tr>
                     ))}
                 </tbody>
