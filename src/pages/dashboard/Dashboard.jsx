@@ -29,6 +29,7 @@ export default function Dashboard() {
     return (
         <>
             <h1>Dashboard</h1>
+            <a href="/addemployee">Add New Employee</a>
             <table border="1">
                 <thead>
                     <tr>
